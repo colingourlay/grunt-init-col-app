@@ -10,5 +10,8 @@
     "boss": true,
     "eqnull": true,
     "es5": true,
-    "evil": true
+    "evil": true,
+    "node": true,
+    "browser": true,
+    "strict": false
 }

@@ -21,6 +21,9 @@ module.exports = function(grunt) {
 
 		browserify: {
 			dev: {
+				options: {
+					debug: true
+				},
 				files: {
 					'.dev/js/app.js': ['src/js/app.js']
 				}
@@ -35,12 +38,12 @@ module.exports = function(grunt) {
 		stylus: {
 			dev: {
 				files: {
-					'.dev/css/app.css': 'src/css/**/*.styl'
+					'.dev/css/app.css': 'src/css/app.styl'
 				}
 			},
 			dist: {
 				files: {
-					'dist/css/app.css': 'src/css/**/*.styl'
+					'dist/css/app.css': 'src/css/app.styl'
 				}
 			}
 		},
